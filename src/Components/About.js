@@ -30,7 +30,7 @@ const About = () => {
                 and achievements, tailored to the job to quickly show employers your
                 value and convince them to read on. It should include years of experience,
                 key hard/soft skills, quantifiable results (e.g., "improved engagement by 30%"),
-                and relevant keywords from the job description to pass Applicant Tracking Systems and done.
+                and relevant keywords from the job description to pass Applicant Tracking Systems and done.and systems.
             </p>
 
         </div>
