@@ -1,0 +1,45 @@
+
+*{
+
+    padding: 0;
+
+    margin: 0;
+}
+
+
+.app-container h1{
+color: brown;
+font-size: 100px;
+margin-bottom: 40px;
+
+}
+
+
+.imageSearch input{
+
+
+    background-color: transparent;
+
+    width: 900px;
+    padding: 20px;
+    margin-bottom: 40px;
+    margin-left: 5px;
+    background-color: black;
+    color: white;
+}
+
+
+.imageSearch button{
+
+/* width: 130px;
+padding: 10px; */
+font-size: 30px;
+background-color: black;
+background-clip: text;
+color: violet;
+margin-left: 10px;
+animation: move 1s infinite;
+padding: 5px;
+margin-bottom: 10px;
+}
+
