@@ -4,7 +4,7 @@ import Signup from "./Components/Signup";
 
 import Login from "./Components/Login";
 
-import Dashboard from "./Dashboard";
+import Dashboard from "./Components/Dashboard";
 // import useState from "react";
 
 
@@ -20,8 +20,8 @@ return (
 
   <div>
 
-  <Signup/>
-  <Login />
+  <Signup setToken={setToken}/>
+  <Login setToken={setToken} />
   <Dashboard  token={token} />
 
 </div>

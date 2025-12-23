@@ -3,22 +3,26 @@ import React, { useState } from "react";
 
 
 
+// console.log("Dashboard Token:", token);
 
 
-const Dashboard = ({token})=>{
+ const Dashboard = ({token})=>{
+//   console.log("Dashboard Token:", token);
+
     const [message,setMessage] = useState("");
     async  function getJoke(){
         try{
             const response = await axios.get("https://instagram-express-app.vercel.app/api/auth/zuku",
                 {
                     headers:{
-                        Authorization:`Bearer ${token}`,
+                        authorization:`Bearer ${token}`
                     }
                 }
             )
-            setMessage(response.data.message)
+        
+            setMessage(response.data.data.message)
         }catch(err){
-            console.log((err))
+            console.log(err)
         }
     }
 
@@ -33,7 +37,9 @@ const Dashboard = ({token})=>{
       <h1>Dashboard</h1>
       {
 
-        message&& <h2>{message}</h2>
+        message && <h2>{message}</h2>
+
+
       }
       <button onClick={getJoke}>Get Joke</button>
         </div>
@@ -43,3 +49,5 @@ const Dashboard = ({token})=>{
 
 
 export default Dashboard;
+
+

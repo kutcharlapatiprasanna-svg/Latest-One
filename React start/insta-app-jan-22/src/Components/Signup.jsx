@@ -3,7 +3,7 @@ import axios from "axios";
 
 
 
-const Signup = () => {
+const Signup = ({setToken}) => {
 
   const [userPrasanna, setUser] = useState({
     name: "",
@@ -14,7 +14,7 @@ const Signup = () => {
 
   })
 
-  const[token,setToken] = useState("")
+  // const[token,setToken] = useState("")
 
   const [successMessage , setSuccessMessage] = useState("")
   const[errorMessage,setErrorMessage] = useState("")

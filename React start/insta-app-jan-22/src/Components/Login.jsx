@@ -3,7 +3,7 @@ import axios from "axios";
 
 
 
-const Login = () => {
+const Login = ({setToken}) => {
 
   const [userPrasanna, setUser] = useState({
     email: "",
@@ -13,10 +13,10 @@ const Login = () => {
 
   });
 
-  const[token,setToken] = useState("")
+  // const[token,setToken] = useState("");
 
-  const [successMessage , setSuccessMessage] = useState("")
-  const[errorMessage,setErrorMessage] = useState("")
+  const [successMessage , setSuccessMessage] = useState("");
+  const[errorMessage,setErrorMessage] = useState("");
 
   const { email, password } = userPrasanna;
 
@@ -32,7 +32,7 @@ const Login = () => {
 
 
   async function implementLogin(e) {
-      e.preventDefault(); 
+      e.preventDefault();
     
     try {
       const response = await axios.post("https://instagram-express-app.vercel.app/api/auth/login",
@@ -40,8 +40,8 @@ const Login = () => {
 
 //  https://jsonplaceholder.typicode.com/posts
         
-          email: email,
-          password:password,
+          "email": email,
+          "password":password,
 
     
         }
@@ -50,12 +50,12 @@ const Login = () => {
       
     setSuccessMessage(response.data.message)
     
-      setToken(response.data.token)
+      setToken(response.data.data.token)
       setErrorMessage("")
-    //   setUser({
-    //     email:email,
-    //     password:password,
-    //   })
+      setUser({
+        email:"",
+        password:"",
+      })
     } 
     
     
@@ -78,7 +78,7 @@ const Login = () => {
 
     <div>
 
-        <h1>Login   </h1>
+        <h1>Login</h1>
 
     {
     successMessage && <h2>{successMessage}</h2>
@@ -118,6 +118,7 @@ const Login = () => {
 
 
       </form>
+      <hr/>
 
 
     </div>
