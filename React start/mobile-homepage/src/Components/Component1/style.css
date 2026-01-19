@@ -1,0 +1,45 @@
+
+@media screen and (max-width:480px) {
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 18px;
+  border-bottom: 1px solid #e5e5e5;
+  
+}
+
+/* Left side: menu icon + text */
+.menu2 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.menu2 img {
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+}
+
+.menu2 p {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+  color: #222;
+}
+
+/* Right side icons */
+.second-icon {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.second-icon img {
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+}
+}

@@ -1,0 +1,74 @@
+.images-four {
+    display: flex;
+    gap: 20px;               /* space between cards */
+    justify-content: center; /* center cards horizontally */
+    flex-wrap: wrap;         
+    /* margin-top: 20px; */
+}
+
+.images-four .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    /* padding: 20px; */
+    border-radius: 12px;
+   width: 150px;
+}
+    
+
+
+
+.images-four .card img {
+    /* width: 250px; */
+    height: 100px;
+    margin-bottom: 10px;
+   
+}
+
+
+.images-four .card p {
+    font-family: 'Inter', 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    color: #333;
+}
+
+.card-two .retail{
+    /* border: 2px solid gray; */
+    margin-right: 10px;
+    
+}
+
+
+
+
+
+/* Keep cards side by side on mobile */
+@media screen and (max-width: 480px) {
+    .images-four {
+        flex-direction: row; /* remain side by side */
+        /* gap: 15px; */
+        justify-content: center;
+    }
+
+    
+}
+
+
+
+
+
+
+
+    
+
+h1 {
+    font-family: 'Inter', 'Roboto', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+

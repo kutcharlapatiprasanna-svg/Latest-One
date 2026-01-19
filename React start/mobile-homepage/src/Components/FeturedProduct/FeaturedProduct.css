@@ -1,0 +1,63 @@
+
+
+
+
+
+.Featured-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;        /* horizontally center */
+    justify-content: center;    /* vertically center content */
+    padding: 40px 20px;         /* spacing inside container */
+    text-align: center;
+    background-color: #f9f9f9;  /* optional: light background */
+}
+
+/* Heading */
+.Featured-product h1 {
+    font-family: 'Inter', 'Roboto', 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+}
+
+/* Image */
+.Featured-product img {
+    width: 100%;
+    max-width: 300px;   /* keeps image responsive */
+    height: auto;       /* maintain aspect ratio */
+    margin-bottom: 20px;
+    /* border: 2px solid red;  optional */
+}
+
+/* Paragraph */
+.Featured-product p {
+    font-family: 'Inter', 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #6a6a6a;
+    max-width: 600px;   /* optional: limit width for readability */
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+/* Button */
+.Featured-product button {
+    background-color: #1e6de8;
+    border: none;
+    border-radius: 40px;
+    padding: 14px 30px;
+    width: 280px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.Featured-product button:hover {
+    background-color: #155ab6;
+}
+
+
+

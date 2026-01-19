@@ -1,0 +1,84 @@
+
+@media screen and (max-width:480px) {
+
+
+/* Container */
+.driving-walker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;        /* horizontally center content */
+    justify-content: flex-start; /* align items to top */
+    /* padding: 40px 20px;         top & horizontal spacing */
+    text-align: center;
+    min-height: auto;          /* optional: take full viewport height */
+    background-color: #f9f9f9;  /* optional: light background */
+}
+
+/* Heading */
+.driving-walker h1 {
+    font-family: 'Inter', 'Roboto', 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+body {
+  margin: 0;
+}
+
+
+/* Image */
+
+
+  body {
+    margin: 0;
+}
+
+.driving-walker {
+    padding: 0;
+}
+
+.driving-walker img {
+    width: 100%;
+    /* display: block; */
+}
+
+.driving-walker img {
+    width: 100%;
+    /* max-width: 100%;
+    height: auto;
+    display: block; */
+    margin: 0;
+    padding: 0;
+    height: 200px;
+}
+
+/* Paragraph */
+.driving-walker p {
+    font-family: 'Inter', 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #6a6a6a;
+    max-width: 600px;      /* optional: limits width for readability */
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+/* Button */
+.driving-walker button {
+    background-color: #1e6de8;
+    border: none;
+    border-radius: 40px;
+    padding: 14px 60px;
+    /* width: 280px; */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+   margin-bottom: 30px;
+  
+}
+
+
+}
