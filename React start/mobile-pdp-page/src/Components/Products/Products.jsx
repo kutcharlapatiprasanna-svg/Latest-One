@@ -13,8 +13,7 @@ const Products = () => {
 
       <div className=''>
         <div className='mainthing'>
-          <p className="deliver-text">
-            Deliver to <a href="#" className="deliver-link">Chris Huntington 11743</a>
+          <p className="deliver-text">Deliver to<a href="#" className="deliver-link">Chris Huntington 11743</a>
           </p>
 
         </div>
