@@ -1,70 +1,101 @@
-.products{
-    /* margin: 20px;
-    padding: 20px; */
-    /* margin: 20px; */
-    padding: 20px 20px;
-    /* margin: 20px 30px ; */
-
-
+/* RESET + BOX-SIZING */
+* {
+  box-sizing: border-box;
 }
 
-.products-heading{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+  background-color: #f5f5f5;
 }
 
-.head{
-    color: blue;
+/* WRAPPER: center the card */
+.mobile-card-wrapper {
+  padding: 16px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.head2{
-    color: limegreen;
+/* CARD */
+.mobile-card {
+  width: 100%;
+  max-width: 400px;
+  /* background-color: #fff; */
+  border-radius: 12px;
+  /* box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1); */
+  padding: 16px;
 }
 
-.deliver-text a{
-    /* color: red; */
-    text-decoration: none;
-    border: none;
-    
+/* TOP ROW: Price + Stock */
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
 }
 
-.mainthing{
-
+.price {
+  font-size: 22px;
+  color: #1a73e8;
+  font-weight: bold;
 }
 
-.deliver-text{
-
-    margin: 15px 0px;
+.stock {
+  font-size: 16px;
+  color: limegreen;
 }
 
-.deliver-text p{
- margin: 5px;
- padding: 5px;
-}
-.deliver-text{
-    display: flex;
-}
-
-.btn20{
-    /* width: 70%; */
-    border-radius: 10%;
-    padding: 4px 40px;
-    margin-right: 30px;
-  border: 2px solid blue;
-  font-size: 15px;
-
-    
+/* DELIVERY TEXT */
+.text {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  margin-bottom: 10px;
 }
 
+.text span {
+  color: #1a73e8;
+}
 
+/* ACTION ROW: Buttons */
+.action-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
 
-.last{
+.outline-btn {
+  flex: 1;
+  padding: 6px 12px;
+  border: 2px solid #1a73e8;
+  border-radius: 8px;
+  /* background-color: white; */
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
 
-    width: 80%;
-    padding: 10px 60px;
-    border-radius: 50px;
-    background-color: hsl(240, 66%, 55%);
-    margin-left: 20px;
-    font-size: 20px;
+.outline-btn img {
+  width: 16px;
+  height: 16px;
+}
+
+/* ADD TO CART BUTTON */
+.add-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 40px;
+  background-color: hsl(240, 66%, 55%);
+  /* color: white; */
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
 }

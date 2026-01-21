@@ -1,43 +1,42 @@
-import React from 'react';
-import "./Products.css"
-import keyboard from "../../assets/keyboard_arrow_down.png"
+import React from "react";
+import "./Products.css";
+import keyboard from "../../assets/keyboard_arrow_down.png"; // replace with your asset path
 
-const Products = () => {
+function Products() {
   return (
-    <div className='products'>
-      <div className='products-heading'>
-        <h1 className='head'>$262.23</h1>
-        <h2 className='head2'>In Stock</h2>
-      </div>
+    <div className="mobile-card-wrapper">
+      <div className="mobile-card">
 
-
-      <div className=''>
-        <div className='mainthing'>
-          <p className="deliver-text">Deliver to<a href="#" className="deliver-link">Chris Huntington 11743</a>
-          </p>
-
-        </div>
-        <div>
-          <p className="deliver-text">
-            Est Delivery Date:  <a href="#" className="deliver-link"> 11/10/24</a>
-          </p>
+        {/* TOP ROW: Price + Stock */}
+        <div className="top-row">
+          <span className="price">$262.23</span>
+          <span className="stock">In Stock</span>
         </div>
 
-        <div className='deliver-text'>
-          <button className='btn20'>Quantity: 1</button>
-          <button className="btn20">1/CS<img src={keyboard} alt="Keyboard" />
+        {/* DELIVERY INFO */}
+        <p className="text">
+          Deliver to <span>Chris - Huntington 11743</span>
+        </p>
+
+        <p className="text">
+          Est Delivery Date: <span>11/10/24</span>
+        </p>
+
+        {/* ACTION ROW: Quantity & Package */}
+        <div className="action-row">
+          <button className="outline-btn">Quantity: 1</button>
+          <button className="outline-btn">
+            1/CS <img src={keyboard} alt="Dropdown" />
           </button>
-
         </div>
 
-
-        <button className='last'>Add to Cart</button>
-
-
+        {/* ADD TO CART */}
+        <button className="add-btn">Add to Cart</button>
 
       </div>
     </div>
   );
 }
 
+// ✅ Export at the very end
 export default Products;
