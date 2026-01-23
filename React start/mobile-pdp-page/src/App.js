@@ -10,6 +10,8 @@ import Specifications from './Components/Specifications/Specifications';
 import Resources from './Components/Resources/Resources';
 import Accessories from './Components/Accessories/Accessories';
 
+// import YouMayAlsoLike from './Components/YouMayAlsoLike/YouMayAlsoLike';
+
 const App = () => {
   return (
     <div>
@@ -23,6 +25,7 @@ const App = () => {
       <Specifications/>
       <Resources/>
       <Accessories/>
+      {/* <YouMayAlsoLike/> */}
     </div>
   );
 }

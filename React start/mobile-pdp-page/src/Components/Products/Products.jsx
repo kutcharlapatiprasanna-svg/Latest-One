@@ -9,8 +9,8 @@ function Products() {
 
         {/* TOP ROW: Price + Stock */}
         <div className="top-row">
-          <span className="price">$262.23</span>
-          <span className="stock">In Stock</span>
+          <h1 className="price">$262.23</h1>
+          <h1 className="stock">In Stock</h1>
         </div>
 
         {/* DELIVERY INFO */}
