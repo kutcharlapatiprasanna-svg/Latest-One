@@ -7,13 +7,13 @@ function Products() {
     <div className="mobile-card-wrapper">
       <div className="mobile-card">
 
-        {/* TOP ROW: Price + Stock */}
+      
         <div className="top-row">
           <h1 className="price">$262.23</h1>
           <h1 className="stock">In Stock</h1>
         </div>
 
-        {/* DELIVERY INFO */}
+       
         <p className="text">
           Deliver to <span>Chris - Huntington 11743</span>
         </p>
@@ -22,7 +22,6 @@ function Products() {
           Est Delivery Date: <span>11/10/24</span>
         </p>
 
-        {/* ACTION ROW: Quantity & Package */}
         <div className="action-row">
           <button className="outline-btn">Quantity: 1</button>
           <button className="outline-btn">
@@ -30,7 +29,7 @@ function Products() {
           </button>
         </div>
 
-        {/* ADD TO CART */}
+    
         <button className="add-btn">Add to Cart</button>
 
       </div>
@@ -38,5 +37,5 @@ function Products() {
   );
 }
 
-// ✅ Export at the very end
+
 export default Products;

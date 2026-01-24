@@ -41,7 +41,7 @@
 .first-ball2 {
     border-radius: 50%;
     width: 35px;
-       margin: 5px;
+    margin: 5px;
     height: 35px;
     background-color: blue;
 
@@ -120,6 +120,9 @@
 .buttons3 {
     display: flex;
     margin-right: 90px;
+    margin-bottom: 20px;
+      border-color: blue;
+    
 }
 
 

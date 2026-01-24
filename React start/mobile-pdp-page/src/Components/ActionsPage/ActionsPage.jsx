@@ -69,7 +69,7 @@ const ActionsPage = () => {
                 </div>
 
                 <div className='right-arrow'>
-                    <p>Show Details</p>
+                    <p className='showing'>Show Details</p>
                     <img className='right' src={right} alt='r' />
                 </div>
 

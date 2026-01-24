@@ -17,7 +17,7 @@ const MenuComponent = () => {
             
             <div className="menu-right">
                 <img src={search} alt="Search" className="search" />
-                <img src={shoppingCart} alt="Shopping Cart" className="cart" />
+                <img src={shoppingCart} alt="Shopping Cart" className="cart1" />
             </div>
 
         </div>
